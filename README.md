@@ -24,6 +24,13 @@
     Atenção, esse projeto ainda não está funcionando 100%, é preciso seguir os passo abaixo para funcionar minimamente
 </h1>
 
+<ol>
+<li>- Descobrir o IP da sua maquina (ipconfig ou ifconfig)</li>
+<li>- Alterar no codigo o IP da API (arquivo PokemonApi.swift)</li>
+<li>- Rodar Api </li>
+</ol>
+
+
 ## :page_with_curl: Sobre
 Este repositório contém a aplicação Pokédex.
 
@@ -35,9 +42,7 @@ Por enquanto estamos usando uma API feita em nodeJS com o mesmo intuido (nosso p
 
 O objetivo principal desse projeto foi praticar Swift. Para isso foi utilizado o Storyboard e XIBSs.
 
-- Descobrir o IP da sua maquina (ipconfig ou ifconfig)
-- Alterar no codigo o IP da API (arquivo PokemonApi.swift)
-- Rodar Api 
+
 
 ## :hammer: Tecnologias
 
