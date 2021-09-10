@@ -45,6 +45,20 @@ extension HomeViewController: UICollectionViewDelegate {
             getMorePokemons(limit: 30, offset: pokes.count)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let pokemon = pokes[indexPath.row]
+            
+        let vc = PokemonDetailViewController()
+        
+        vc.pokemon = pokemon
+        
+        
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {

@@ -10,7 +10,7 @@ import Alamofire
 
 struct PokemonApi {
     
-    private let baseUrl = "http://192.168.0.8:3333"
+    private let baseUrl = "http://192.168.0.3:3333"
     
     func getPokemons(_ offset:Int,_ limit:Int, completion: @escaping (_ response: [Pokemon]) -> Void) {
         
@@ -30,6 +30,24 @@ struct PokemonApi {
             guard let dados = try? JSONDecoder().decode([Pokemon].self, from: responseData) else {return}
             
             completion(dados)
+        }
+    }
+    
+    func getPokemonEvolutions(_ id:Int, completion: @escaping (_ response: Evolution) -> Void) {
+        
+        let url = baseUrl + "evolutions/\(id)"
+        
+        
+        AF.request(url, method: .get).responseJSON { response in
+            guard let responseData = response.data else{
+                return
+            }
+            
+            guard let data = try? JSONDecoder().decode(Evolution.self, from: responseData) else{
+                return
+            }
+            
+            completion(data)
         }
     }
 }
