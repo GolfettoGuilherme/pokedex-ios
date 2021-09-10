@@ -20,6 +20,10 @@
   <img alt="Home" src="https://raw.githubusercontent.com/GolfettoGuilherme/pokedex-ios/main/Pokedex/Assets/home.png" width="400" />
 </h1>
 
+<h1 align="center">
+    Atenção, esse projeto ainda não está funcionando 100%, é preciso seguir os passo abaixo para funcionar minimamente
+</h1>
+
 ## :page_with_curl: Sobre
 Este repositório contém a aplicação Pokédex.
 
@@ -30,6 +34,10 @@ Para resgatar os pokémons, está sendo desenvolvida uma API em C# para filtrar 
 Por enquanto estamos usando uma API feita em nodeJS com o mesmo intuido (nosso plano é usar a nossa no futuro proximo).
 
 O objetivo principal desse projeto foi praticar Swift. Para isso foi utilizado o Storyboard e XIBSs.
+
+- Descobrir o IP da sua maquina (ipconfig ou ifconfig)
+- Alterar no codigo o IP da API (arquivo PokemonApi.swift)
+- Rodar Api 
 
 ## :hammer: Tecnologias
 
@@ -61,8 +69,11 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## :gear: Iniciando servidor
 ```bash
+  # Entrar no diretório do projeto do servidor:
+  $ cd projeto-servidor
+
   # Entrar no diretório do servidor:
-  $ cd server
+  $ cd serve
 
   # Iniciar a aplicação:
   $ yarn start
