@@ -16,8 +16,8 @@
 </p>
 
 <h1 align="center">
-  <img alt="Splash Screen" src="https://github.com/GolfettoGuilherme/pokedex-ios/blob/main/Marvel%20Search/Assets/splash.png" width="400" />
-  <img alt="Home" src="https://github.com/GolfettoGuilherme/pokedex-ios/blob/main/Marvel%20Search/Assets/home.png" width="400" />
+  <img alt="Splash Screen" src="https://raw.githubusercontent.com/GolfettoGuilherme/pokedex-ios/main/Pokedex/Assets/splash.png" width="400" />
+  <img alt="Home" src="https://raw.githubusercontent.com/GolfettoGuilherme/pokedex-ios/main/Pokedex/Assets/home.png" width="400" />
 </h1>
 
 ## :page_with_curl: Sobre
